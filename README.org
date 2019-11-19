@@ -1,0 +1,45 @@
+#+TITLE:       Telega - A One Pager
+#+SUBTITLE:    Quick introduction to configuration and usage of Telega
+#+AUTHOR:      Christoph Pilka
+#+EMAIL:       (concat "c.pilka" at-sign "asconix.com")
+#+DESCRIPTION: Quick introduction to configuration and usage of Telega
+#+KEYWORDS:    telega, emacs, Telegram, quick reference, cheat sheet
+#+LANGUAGE:    en
+
+* Prerequisites
+
+In order to run Telega following software needs to be installed
+
+- recent version of GNU Emacs (version 26.1 at time of writing)
+- TDlib 1.5.0
+- =telega-server=
+
+* Key bindings
+
+** Navigation
+
+| Key       | Alternative       | Command                            | Action                                                        |
+|-----------+-------------------+------------------------------------+---------------------------------------------------------------|
+| =n=       | =TAB=             | =telega-button-forward=            | Move forward to next visible/active button                    |
+| =p=       | =S-TAB= / =C-M-i= | =telega-button-backward=           | Move backward to previous visible/active button               |
+| =         |                   | =exwm-workspace-switch=            | Interactively switch workspace                                |
+| =s-N=     |                   | =(exwm-workspace-switch-create N)= | Switch to workspace N (N is a digit)                          |
+| =C-c C-f= |                   | =exwm-layout-set-fullscreen=       | Enter fullscreen mode                                         |
+|           |                   |                                    |                                                               |
+|           |                   |                                    |                                                               |
+|           |                   |                                    |                                                               |
+
+** Chat
+
+| Key | Alternative | Command                  | Action                                             |
+|-----+-------------+--------------------------+----------------------------------------------------|
+| =a= |             | =telega-chat-add-member= | Add member to chat                                 |
+| =s= |             | =telega-search=          | Search in chats, global public chatds and messages |
+| =d= | =DEL= / =k= | =telega-msg-delete=      | Delete message                                     |
+
+** Conversation
+
+| Key | Alternative | Command              | Action                  |
+|-----+-------------+----------------------+-------------------------|
+| =e= |             | =telega-msg-edit=    | Start editing message   |
+| =f= |             | =telega-msg-forward= | Forward message to chat |
